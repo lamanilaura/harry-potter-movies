@@ -1,19 +1,59 @@
-
 .movie-details {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .movie-info {
-  justify-content: space-between;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
 .movie-stats {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
   font-size: small;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .details-button {
-  align-self: flex-end; 
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .movie-details {
+    flex-direction: column;
+  }
+
+  .movie-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .movie-stats {
+    flex-direction: column;
+    gap: 10px;
+    font-size: medium;
+    margin-top: 20px;
+  }
+
+  .details-button {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-stats {
+    font-size: large;
+  }
+
+  .details-button {
+    padding: 12px;
+  }
 }

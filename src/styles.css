@@ -6,9 +6,15 @@ body {
   margin: 0;
   justify-content: center;
   align-items: center;
-  padding: 1em 10em;
+  padding: 1em clamp(2vw, 10%, 10vw);
+  box-sizing: border-box;
 }
 
+@media (max-width: 480px) {
+  body {
+    padding: 1em clamp(4vw, 8%, 6vw);
+  }
+}
 
 .go-back-btn {
   display: flex;
