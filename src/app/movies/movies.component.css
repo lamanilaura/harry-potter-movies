@@ -1,0 +1,19 @@
+
+.movie-details {
+  display: flex;
+}
+
+.movie-info {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.movie-stats {
+  display: flex;
+  gap: 20px; 
+  font-size: small;
+}
+
+.details-button {
+  align-self: flex-end; 
+}

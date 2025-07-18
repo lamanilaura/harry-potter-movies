@@ -1,0 +1,26 @@
+<app-filters (filterChanged)="filterMovies($event)"></app-filters>
+<ul>
+  @for(movie of filteredMovies; track movie.id) {
+  <li>
+    <div class="movie-details">
+      <div class="movie-info">
+        <strong>{{ movie.title }}</strong>
+        <div class="movie-stats">
+          <span>Release Date: {{ movie.release_date }}</span>
+          <span>Budget: {{ movie.budget | moneyAmount }}</span>
+          <span>Duration: {{ movie.duration | duration }}</span>
+        </div>
+      </div>
+
+      <button
+        [id]="movie.id"
+        [routerLink]="['/movie-details', movie.id]"
+        [id]="movie.id"
+        class="details-button"
+      >
+        Details
+      </button>
+    </div>
+  </li>
+  }
+</ul>

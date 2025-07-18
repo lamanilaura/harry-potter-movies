@@ -1,0 +1,20 @@
+<div class="filters-container">
+  <strong>Filters</strong>
+  <div class="filter-input-container">
+    <input
+      type="text"
+      placeholder="Search by title"
+      [(ngModel)]="title"
+      (ngModelChange)="onFilterChange()"
+      class="filter-input"
+    />
+
+    <input
+      type="number"
+      placeholder="Search by release year"
+      [(ngModel)]="releaseYear"
+      (ngModelChange)="onFilterChange()"
+      class="filter-input"
+    />
+  </div>
+</div>

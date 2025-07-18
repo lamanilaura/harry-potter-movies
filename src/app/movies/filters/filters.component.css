@@ -1,0 +1,19 @@
+.filter-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.filters-container {
+  padding: 10px;
+  background-color: var(--secondary-back-color);
+  flex: 1;
+}
